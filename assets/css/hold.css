@@ -881,6 +881,7 @@ div.placeholder svg circle.small {
 }
 .card-title {
   margin: 0;
+  padding-bottom:1.5rem;
 }
 .mbr-flex {
   display: flex;
