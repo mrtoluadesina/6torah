@@ -396,109 +396,53 @@
                 </div>
               </div>
             </div>
+            
             <div
               class="form-wrap mbr-col-sm-12 mbr-col-md-12 mbr-flex mbr-col-lg-8"
               data-form-type="formoid"
             >
               <div class="form-box mbr-m-auto">
-                <div class="form-block" data-form-type="formoid">
+                <div class="form-block">
                   <form
                     class="mbr-form mbr-jc-c mbr-flex mbr-column i-amphtml-form"
-                    method="post"
-                    target="_top"
-                    action-xhr="https://formoid.net/api/amp-form/push"
-                    data-form-title="Mobirise Form"
-                    novalidate=""
+                    method="POST"
+                    action="sendmail.php"
                   >
-                    <input
-                      type="hidden"
-                      name="email"
-                      data-form-email="true"
-                      value="ooA5EHYyvruTMnlETxfJGTVagPjiH4356ARE+3H3uy08NnxzG+F04al8nJjDnV/Gm61HoGjZDw4Zw/egqg5rc7CwxuJ/nvccTOhySkCfOIQDitPe1ACbmYwWoBFO2y2r"
-                    />
-
-                    <div submit-success="">
-                      <template
-                        data-form-alert=""
-                        type="amp-mustache"
-                      ></template>
-                    </div>
-                    <div submit-error="">
-                      <template
-                        data-form-alert=""
-                        type="amp-mustache"
-                      ></template>
-                    </div>
                     <div class="fieldset mbr-row">
                       <div class="split-row mbr-flex mbr-col-sm-12">
-                        <input
-                          type="hidden"
-                          name="form[data][0][0]"
-                          value="Name"
-                          id="form[data][0][0]-contacts2-e"
-                          data-form-field=""
-                        />
+                       
                         <input
                           type="text"
-                          name="form[data][0][1]"
-                          data-form-field="Name"
-                          placeholder="Name"
+                          name="firstname"
+                          placeholder="First Name"
                           required=""
-                          id="form[data][0][1]-contacts2-e"
                         />
-                        <input
-                          type="hidden"
-                          name="form[data][1][0]"
-                          value="Last Name"
-                          id="form[data][1][0]-contacts2-e"
-                          data-form-field=""
-                        />
+                        
                         <input
                           type="text"
-                          name="form[data][1][1]"
-                          data-form-field="Last Name"
+                          name="lastname"
                           placeholder="Last Name"
                           required=""
-                          id="form[data][1][1]-contacts2-e"
                         />
                       </div>
 
                       <div class="split-row mbr-flex mbr-col-sm-12">
                         <input
-                          type="hidden"
-                          name="form[data][2][0]"
-                          value="E-mail"
-                          id="form[data][2][0]-contacts2-e"
-                          data-form-field=""
-                        />
-                        <input
                           type="email"
-                          name="form[data][2][1]"
-                          data-form-field="E-mail"
+                          name="email"
                           placeholder="E-mail Address"
                           required=""
-                          id="form[data][2][1]-contacts2-e"
                         />
                       </div>
 
                       <div class="split-row mbr-flex mbr-col-sm-12"></div>
                       <div
                         class="mbr-col-sm-12 mbr-col-md-12"
-                        data-for="form[data][6][1]"
                       >
-                        <input
-                          type="hidden"
-                          name="form[data][3][0]"
-                          value="Message"
-                          id="form[data][6][0]-contacts2-e"
-                          data-form-field=""
-                        />
                         <textarea
-                          name="form[data][3][1]"
+                          name="message"
                           rows="7"
-                          data-form-field="Message"
                           placeholder="Message"
-                          id="form[data][6][1]-contacts2-e"
                         ></textarea>
                       </div>
                     </div>
