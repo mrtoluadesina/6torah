@@ -404,9 +404,9 @@
               <div class="form-box mbr-m-auto">
                 <div class="form-block">
                   <form
-                    class="mbr-form mbr-jc-c mbr-flex mbr-column i-amphtml-form"
-                    method="POST"
-                    action="sendmail.php"
+                    class="mbr-form mbr-jc-c mbr-flex mbr-column"
+                    action-xhr="mailer.php"
+                    method="post"
                   >
                     <div class="fieldset mbr-row">
                       <div class="split-row mbr-flex mbr-col-sm-12">
@@ -414,15 +414,13 @@
                         <input
                           type="text"
                           name="firstname"
-                          placeholder="First Name"
-                          required=""
+                          placeholder="First Name"   
                         />
                         
                         <input
                           type="text"
                           name="lastname"
                           placeholder="Last Name"
-                          required=""
                         />
                       </div>
 
@@ -431,11 +429,8 @@
                           type="email"
                           name="email"
                           placeholder="E-mail Address"
-                          required=""
                         />
                       </div>
-
-                      <div class="split-row mbr-flex mbr-col-sm-12"></div>
                       <div
                         class="mbr-col-sm-12 mbr-col-md-12"
                       >
@@ -449,7 +444,8 @@
                     <div class="mbr-section-btn">
                       <button
                         type="submit"
-                        class="btn btn-md btn-primary btn-form display-7"
+                        class="btn btn-md btn-primary btn-form display-7"\
+                        name="submit"
                       >
                         SEND
                       </button>
