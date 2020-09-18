@@ -20,10 +20,7 @@ if (isset($_POST['submit'])){
 
                $email_status=true;
 
-               header("Location : index.html?mailsent");
-
-
-
+               //header("Location : ");
           }
 
      }
